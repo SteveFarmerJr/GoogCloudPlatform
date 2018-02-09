@@ -18,7 +18,8 @@ from PIL import Image
 from faces import main
 
 RESOURCES = os.path.join(os.path.dirname(__file__), 'resources')
-
+# os.environ["GCLOUD_PROJECT"] ="silicon-current-119315"
+# os.environ["GOOGLE_APPLICATION_CREDENTIALS"]="key.json"
 
 def test_main(tmpdir):
     out_file = os.path.join(tmpdir.dirname, 'face-output.jpg')
